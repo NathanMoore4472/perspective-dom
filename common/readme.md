@@ -1,12 +1,12 @@
-# Common Scope - Get By ID
+# Common Scope - Perspective DOM
 
-This directory contains the shared code used by both the Gateway and Designer scopes of the Get By ID. The common scope is crucial for maintaining consistency between the two environments and defining the core structures of our components. This also allows us to avoid code duplication and ensure that changes are reflected uniformly across the module.
+This directory contains the shared code used by both the Gateway and Designer scopes of the Perspective DOM. The common scope is crucial for maintaining consistency between the two environments and defining the core structures of our components. This also allows us to avoid code duplication and ensure that changes are reflected uniformly across the module.
 
 ## Key Files
 
 - `Constants.java`: Holds constant values used across the module.
 - `DelegatingComponentDescriptor.java`: A utility class for creating flexible component descriptors.
-- `GetByIDComponents.java`: Defines common properties for all example components.
+- `PerspectiveDOMComponents.java`: Defines common properties for all example components.
 - `component/input/Button.java`: Defines the Button component's structure and properties.
 
 ## Constants
@@ -22,7 +22,7 @@ These constants ensure consistency across different parts of the module.
 
 This abstract class implements `ComponentDescriptor` and provides a way to override specific methods of a component descriptor while delegating others to the original implementation. This is particularly useful in the Designer scope where we might want to customize certain aspects of a component (like its icon) without redefining everything.
 
-## GetByIDComponents
+## PerspectiveDOMComponents
 
 This class defines common properties for all example components:
 

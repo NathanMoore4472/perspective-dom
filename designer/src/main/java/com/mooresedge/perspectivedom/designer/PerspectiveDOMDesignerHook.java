@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.designer;
+package com.mooresedge.perspectivedom.designer;
 
 import com.inductiveautomation.ignition.common.licensing.LicenseState;
 import com.inductiveautomation.ignition.common.script.ScriptManager;
@@ -9,17 +9,17 @@ import com.inductiveautomation.ignition.designer.model.DesignerContext;
 import com.inductiveautomation.perspective.designer.DesignerComponentRegistry;
 import com.inductiveautomation.perspective.designer.api.PerspectiveDesignerInterface;
 
-import com.mooresedge.getbyid.common.Constants;
-import com.mooresedge.getbyid.common.components.input.Button;
-import com.mooresedge.getbyid.designer.scripting.DesignerDomScriptModule;
+import com.mooresedge.perspectivedom.common.Constants;
+import com.mooresedge.perspectivedom.common.components.input.Button;
+import com.mooresedge.perspectivedom.designer.scripting.DesignerDomScriptModule;
 
 /**
- * Designer module hook for the Get By ID.
+ * Designer module hook for the Perspective DOM.
  * This class is responsible for initializing and managing the module's
  * lifecycle in the Ignition Designer.
  */
-public class GetByIDDesignerHook extends AbstractDesignerModuleHook {
-	private static final LoggerEx log = LoggerEx.newBuilder().build(GetByIDDesignerHook.class);
+public class PerspectiveDOMDesignerHook extends AbstractDesignerModuleHook {
+	private static final LoggerEx log = LoggerEx.newBuilder().build(PerspectiveDOMDesignerHook.class);
 
 	private DesignerContext context;
 	private DesignerComponentRegistry registry;
@@ -45,7 +45,7 @@ public class GetByIDDesignerHook extends AbstractDesignerModuleHook {
 	 */
 	@Override
 	public void startup(DesignerContext context, LicenseState activationState) {
-		log.trace("Starting up Get By ID Designer Hook");
+		log.trace("Starting up Perspective DOM Designer Hook");
 		this.context = context;
 		init();
 	}
@@ -68,7 +68,7 @@ public class GetByIDDesignerHook extends AbstractDesignerModuleHook {
 	 */
 	@Override
 	public void shutdown() {
-		log.trace("Shutting down Get By ID Designer Hook");
+		log.trace("Shutting down Perspective DOM Designer Hook");
 		removeComponents();
 	}
 

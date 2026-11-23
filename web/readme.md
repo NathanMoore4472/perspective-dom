@@ -1,6 +1,6 @@
-# Web Scope - Get By ID
+# Web Scope - Perspective DOM
 
-This directory contains the frontend code for the Get By ID. It includes the React components, build configuration, and other web-related files necessary for creating custom Perspective components.
+This directory contains the frontend code for the Perspective DOM. It includes the React components, build configuration, and other web-related files necessary for creating custom Perspective components.
 
 ## Key Files and Directories
 
@@ -74,7 +74,7 @@ To build the web components:
 2. Run `npm install` to install dependencies.
 3. Run `npm run build` to build the components.
 
-This will create `GetByIDComponents.js` and `GetByIDComponents.css` in the `dist` directory, which are then copied to the Gradle resources directory for inclusion in the module.
+This will create `PerspectiveDOMComponents.js` and `PerspectiveDOMComponents.css` in the `dist` directory, which are then copied to the Gradle resources directory for inclusion in the module.
 
 ## Integration with Java Module
 

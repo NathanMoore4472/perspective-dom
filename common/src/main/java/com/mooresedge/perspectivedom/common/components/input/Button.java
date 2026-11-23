@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.common.components.input;
+package com.mooresedge.perspectivedom.common.components.input;
 
 import java.util.List;
 import java.awt.image.BufferedImage;
@@ -7,10 +7,10 @@ import com.inductiveautomation.perspective.common.api.ComponentDescriptor;
 import com.inductiveautomation.perspective.common.api.ComponentDescriptorImpl;
 import com.inductiveautomation.perspective.common.api.ComponentEventDescriptor;
 
-import com.mooresedge.getbyid.common.Constants;
-import com.mooresedge.getbyid.common.GetByIDComponents;
-import com.mooresedge.getbyid.common.utilities.ComponentUtilities;
-import com.mooresedge.getbyid.common.utilities.ImageUtilities;
+import com.mooresedge.perspectivedom.common.Constants;
+import com.mooresedge.perspectivedom.common.PerspectiveDOMComponents;
+import com.mooresedge.perspectivedom.common.utilities.ComponentUtilities;
+import com.mooresedge.perspectivedom.common.utilities.ImageUtilities;
 
 /**
  * This class describes the Button component to the Java registry.
@@ -53,7 +53,7 @@ public class Button {
 	 * to recognize, display, and utilize the Button component.
 	 */
 	public static ComponentDescriptor DESCRIPTOR = ComponentDescriptorImpl.ComponentBuilder.newBuilder()
-			.setPaletteCategory(GetByIDComponents.COMPONENT_CATEGORY)
+			.setPaletteCategory(PerspectiveDOMComponents.COMPONENT_CATEGORY)
 			.setId(COMPONENT_ID)
 			.setModuleId(Constants.MODULE_ID)
 			.setSchema(ComponentUtilities.getSchemaFromFilePath(PROPS_SCHEMA_PATH))
@@ -61,6 +61,6 @@ public class Button {
 			.setName(COMPONENT_NAME)
 			.addPaletteEntry("", COMPONENT_NAME, COMPONENT_DESCRIPTION, thumbnail, null)
 			.setDefaultMetaName(COMPONENT_DEFAULT_NAME)
-			.setResources(GetByIDComponents.BROWSER_RESOURCES)
+			.setResources(PerspectiveDOMComponents.BROWSER_RESOURCES)
 			.build();
 }

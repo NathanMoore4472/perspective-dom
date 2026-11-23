@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.designer;
+package com.mooresedge.perspectivedom.designer;
 
 import javax.swing.Icon;
 import java.util.Optional;
@@ -8,7 +8,7 @@ import com.inductiveautomation.ignition.common.util.LoggerEx;
 import com.inductiveautomation.perspective.common.api.ComponentDescriptor;
 import com.inductiveautomation.perspective.designer.DesignerComponentRegistry;
 
-import com.mooresedge.getbyid.common.utilities.DelegatingComponentDescriptor;
+import com.mooresedge.perspectivedom.common.utilities.DelegatingComponentDescriptor;
 
 /**
  * Utility class for registering components with custom icons in the Ignition Designer.

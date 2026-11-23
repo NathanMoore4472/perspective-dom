@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.gateway;
+package com.mooresedge.perspectivedom.gateway;
 
 import java.util.Optional;
 
@@ -11,18 +11,18 @@ import com.inductiveautomation.ignition.gateway.model.GatewayContext;
 import com.inductiveautomation.perspective.common.api.ComponentRegistry;
 import com.inductiveautomation.perspective.gateway.api.PerspectiveContext;
 
-import com.mooresedge.getbyid.common.Constants;
-import com.mooresedge.getbyid.common.components.input.Button;
-import com.mooresedge.getbyid.gateway.scripting.GatewayDomScriptModule;
+import com.mooresedge.perspectivedom.common.Constants;
+import com.mooresedge.perspectivedom.common.components.input.Button;
+import com.mooresedge.perspectivedom.gateway.scripting.GatewayDomScriptModule;
 
 /**
- * Gateway module hook for the Get By ID.
+ * Gateway module hook for the Perspective DOM.
  * This class is responsible for initializing and managing the module's
  * lifecycle in the Ignition Gateway.
  */
-public class GetByIDGatewayHook extends AbstractGatewayModuleHook {
+public class PerspectiveDOMGatewayHook extends AbstractGatewayModuleHook {
 
-	private static final LoggerEx log = LoggerEx.newBuilder().build(GetByIDGatewayHook.class);
+	private static final LoggerEx log = LoggerEx.newBuilder().build(PerspectiveDOMGatewayHook.class);
 
 	private GatewayContext gatewayContext;
 	private PerspectiveContext perspectiveContext;
@@ -54,7 +54,7 @@ public class GetByIDGatewayHook extends AbstractGatewayModuleHook {
 			// Uncomment here, in shutdown(), and in the Designer hook to bring it back.
 			// this.componentRegistry.registerComponent(Button.DESCRIPTOR);
 		} else {
-			log.error("Reference to component registry not found, Get By ID components will fail to function!");
+			log.error("Reference to component registry not found, Perspective DOM components will fail to function!");
 		}
 	}
 
@@ -63,11 +63,11 @@ public class GetByIDGatewayHook extends AbstractGatewayModuleHook {
 	 */
 	@Override
 	public void shutdown() {
-		log.info("Shutting down Get By ID module and removing registered components.");
+		log.info("Shutting down Perspective DOM module and removing registered components.");
 		if (this.componentRegistry != null) {
 			// this.componentRegistry.removeComponent(Button.COMPONENT_ID);
 		} else {
-			log.warn("Component registry was null, could not unregister Get By ID components.");
+			log.warn("Component registry was null, could not unregister Perspective DOM components.");
 		}
 	}
 

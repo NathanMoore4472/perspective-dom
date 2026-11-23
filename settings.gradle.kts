@@ -49,7 +49,7 @@ dependencyResolutionManagement {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 // Set the root project name
-rootProject.name = "get-by-id"
+rootProject.name = "perspective-dom"
 
 // Include all subprojects in the build
 include(":", ":common", ":gateway", ":designer", ":web")

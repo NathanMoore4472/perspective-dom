@@ -1,5 +1,5 @@
 {
-	"name": "@mooresedge/get-by-id",
+	"name": "@mooresedge/perspective-dom",
 	"version": "0.0.1",
 	"description": "A collection of example React components",
 	"main": "dist/index.js",

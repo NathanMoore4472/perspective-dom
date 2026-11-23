@@ -57,7 +57,7 @@ export class Button extends Component<ComponentProps<ButtonProps>, any> {
 		const { props: { text, enabled }, emit } = this.props;
 		return (
 			<button
-				{...emit({ classes: ['getbyid-example-button'] })}
+				{...emit({ classes: ['perspective-dom-example-button'] })}
 				onClick={this.onActionPerformed}
 				disabled={!enabled}
 			>

@@ -1,7 +1,7 @@
-package com.mooresedge.getbyid.common;
+package com.mooresedge.perspectivedom.common;
 
 /**
- * This class contains constant values used across the Get By ID
+ * This class contains constant values used across the Perspective DOM
  * module.
  * These constants ensure consistency in module identification and resource
  * access.
@@ -12,14 +12,14 @@ public class Constants {
 	 * This ID is used in various parts of the module sdk to recognize and
 	 * manage the module.
 	 */
-	public static final String MODULE_ID = "com.mooresedge.getbyid.GetByID";
+	public static final String MODULE_ID = "com.mooresedge.perspectivedom.PerspectiveDOM";
 
 	/**
 	 * The URL alias for this module's resources.
 	 * This alias is used when mounting and accessing module resources in the web
 	 * context.
 	 */
-	public static final String MODULE_URL_ALIAS = "get-by-id";
+	public static final String MODULE_URL_ALIAS = "perspective-dom";
 
 	/**
 	 * The scripting namespace our functions are registered under, e.g.

@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.common.utilities;
+package com.mooresedge.perspectivedom.common.utilities;
 
 import com.inductiveautomation.ignition.common.jsonschema.JsonSchema;
 import com.inductiveautomation.perspective.common.api.ComponentEventDescriptor;

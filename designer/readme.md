@@ -1,13 +1,13 @@
-# Designer Scope - Get By ID
+# Designer Scope - Perspective DOM
 
-This directory contains the designer-specific code for the Get By ID. The designer scope is responsible for integrating our custom components into the Ignition Designer, providing necessary metadata, icons, and any designer-specific functionality.
+This directory contains the designer-specific code for the Perspective DOM. The designer scope is responsible for integrating our custom components into the Ignition Designer, providing necessary metadata, icons, and any designer-specific functionality.
 
 ## Key Files
 
-- `GetByIDDesignerHook.java`: The main entry point for the designer module.
+- `PerspectiveDOMDesignerHook.java`: The main entry point for the designer module.
 - `IconUtilities.java`: A utility class for handling SVG icons.
 
-## GetByIDDesignerHook
+## PerspectiveDOMDesignerHook
 
 This class extends `AbstractDesignerModuleHook`, the hook provided by the Ignition SDK that acts as the entrypoint for our Java code in the designer scope. It's responsible for registering our components with the designer and handling any designer-specific logic.
 
@@ -51,7 +51,7 @@ This utility class provides methods for loading SVG icons, which are used in the
 We use `BundleUtil` to add a resource bundle for internationalization:
 
 ```java
-BundleUtil.get().addBundle("example-components", GetByIDDesignerHook.class.getClassLoader(),
+BundleUtil.get().addBundle("example-components", PerspectiveDOMDesignerHook.class.getClassLoader(),
         "example-components");
 ```
 

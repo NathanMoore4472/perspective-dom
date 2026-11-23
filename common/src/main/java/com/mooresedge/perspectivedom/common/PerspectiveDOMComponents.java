@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.common;
+package com.mooresedge.perspectivedom.common;
 
 import java.util.Set;
 import com.inductiveautomation.perspective.common.api.BrowserResource;
@@ -11,12 +11,12 @@ import com.inductiveautomation.perspective.common.api.BrowserResource;
  * and declares the necessary browser resources (JS and CSS files) for the
  * components.
  */
-public class GetByIDComponents {
+public class PerspectiveDOMComponents {
 	/**
 	 * The category name for example components in the Perspective component
 	 * palette.
 	 */
-	public static final String COMPONENT_CATEGORY = "Get By ID";
+	public static final String COMPONENT_CATEGORY = "Perspective DOM";
 
 	/**
 	 * A set of BrowserResource objects representing the JavaScript and CSS files
@@ -25,12 +25,12 @@ public class GetByIDComponents {
 	public static final Set<BrowserResource> BROWSER_RESOURCES = Set.of(
 			// JavaScript resource for the example components
 			new BrowserResource(
-					"get-by-id-js",
-					String.format("/res/%s/GetByIDComponents.js", Constants.MODULE_URL_ALIAS),
+					"perspective-dom-js",
+					String.format("/res/%s/PerspectiveDOMComponents.js", Constants.MODULE_URL_ALIAS),
 					BrowserResource.ResourceType.JS),
 			// CSS resource for the example components
 			new BrowserResource(
-					"get-by-id-css",
-					String.format("/res/%s/GetByIDComponents.css", Constants.MODULE_URL_ALIAS),
+					"perspective-dom-css",
+					String.format("/res/%s/PerspectiveDOMComponents.css", Constants.MODULE_URL_ALIAS),
 					BrowserResource.ResourceType.CSS));
 }

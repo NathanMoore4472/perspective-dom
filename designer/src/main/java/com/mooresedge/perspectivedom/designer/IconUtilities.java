@@ -1,4 +1,4 @@
-package com.mooresedge.getbyid.designer;
+package com.mooresedge.perspectivedom.designer;
 
 import javax.swing.Icon;
 import java.io.IOException;

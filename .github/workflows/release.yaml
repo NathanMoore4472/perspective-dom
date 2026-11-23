@@ -44,5 +44,5 @@ jobs:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           prerelease: false
           files: |
-            build/Get-By-ID.modl
+            build/Perspective-DOM.modl
             LICENSE.txt

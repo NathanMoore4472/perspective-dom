@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 
-const LibName = "GetByIDComponents";
+const LibName = "PerspectiveDOMComponents";
 
 /**
  * Custom function to copy built files to the Gradle resources directory.

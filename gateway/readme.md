@@ -1,12 +1,12 @@
-# Gateway Scope - Get By ID
+# Gateway Scope - Perspective DOM
 
-This directory contains the gateway-specific code for the Get By ID. The gateway scope is responsible for registering components with the Perspective system and handling any server-side logic related to these components.
+This directory contains the gateway-specific code for the Perspective DOM. The gateway scope is responsible for registering components with the Perspective system and handling any server-side logic related to these components.
 
 ## Key Files
 
-- `GetByIDGatewayHook.java`: The main entry point for the gateway module.
+- `PerspectiveDOMGatewayHook.java`: The main entry point for the gateway module.
 
-## GetByIDGatewayHook
+## PerspectiveDOMGatewayHook
 
 This class extends `AbstractGatewayModuleHook`, the hook provided by the Ignition SDK that acts as the entrypoint for our Java code, and is responsible for the lifecycle management of our module in the gateway scope.
 

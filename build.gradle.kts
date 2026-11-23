@@ -18,9 +18,9 @@ allprojects {
 // Configure the Ignition module build settings
 ignitionModule {
     // Basic module metadata
-    name.set("Get By ID")  // The human-readable name shown in the Gateway
-    fileName.set("Get-By-ID.modl")  // The output file name
-    id.set("com.mooresedge.getbyid.GetByID")  // Unique module identifier
+    name.set("Perspective DOM")  // The human-readable name shown in the Gateway
+    fileName.set("Perspective-DOM.modl")  // The output file name
+    id.set("com.mooresedge.perspectivedom.PerspectiveDOM")  // Unique module identifier
     moduleVersion.set("${project.version}")  // Version from allprojects block
     license.set("LICENSE.txt")  // License file to include
     moduleDescription.set("A Perspective component module by MooresEdge.")
@@ -44,8 +44,8 @@ ignitionModule {
     // Register the module hooks that initialize the module in each scope
     hooks.putAll(
         mapOf(
-        "com.mooresedge.getbyid.gateway.GetByIDGatewayHook" to "G",
-        "com.mooresedge.getbyid.designer.GetByIDDesignerHook" to "D"
+        "com.mooresedge.perspectivedom.gateway.PerspectiveDOMGatewayHook" to "G",
+        "com.mooresedge.perspectivedom.designer.PerspectiveDOMDesignerHook" to "D"
 		)
 	)
 
