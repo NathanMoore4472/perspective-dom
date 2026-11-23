@@ -94,6 +94,17 @@ cp gradle.properties.template gradle.properties
 
 The unsigned module is written to `build/Perspective-DOM.unsigned.modl`. Install it on an Ignition 8.3 gateway that allows unsigned modules.
 
+Signed builds for the [releases](https://github.com/NathanMoore4472/perspective-dom/releases) are made by passing a version and the signing details as properties (the keystore stays outside the repository):
+
+```bash
+./gradlew -Pversion=0.1.0 -PsignModule=true \
+  -Pignition.signing.keystoreFile=/path/to/keystore.jks -Pignition.signing.keystorePassword=... \
+  -Pignition.signing.certFile=/path/to/chain.p7b -Pignition.signing.certAlias=... -Pignition.signing.certPassword=... \
+  clean build
+```
+
+This writes the signed module to `build/Perspective-DOM.modl`. Always include `clean` when changing the version.
+
 ## Development gateway
 
 ```bash
