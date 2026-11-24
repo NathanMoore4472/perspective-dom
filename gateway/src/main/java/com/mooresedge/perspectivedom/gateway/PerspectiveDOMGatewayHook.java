@@ -107,4 +107,12 @@ public class PerspectiveDOMGatewayHook extends AbstractGatewayModuleHook {
 	public boolean isFreeModule() {
 		return true;
 	}
+
+	/**
+	 * @return true so the module can be installed on Ignition Maker Edition.
+	 */
+	@Override
+	public boolean isMakerEditionCompatible() {
+		return true;
+	}
 }

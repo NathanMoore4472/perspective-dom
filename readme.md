@@ -21,6 +21,8 @@ system.dom.getElementById("example-button").props.text
 
 Renaming or moving the component no longer breaks the script.
 
+Runs on Ignition 8.3 Standard and **Maker Edition** (use the signed module on Maker, which doesn't allow unsigned modules). It is a free module and needs no license.
+
 ## Scripting Functions
 
 ### Lookups by ID

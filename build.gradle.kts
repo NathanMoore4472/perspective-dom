@@ -26,6 +26,7 @@ ignitionModule {
     license.set("LICENSE.txt")  // License file to include
     moduleDescription.set("A Perspective component module by MooresEdge.")
     requiredIgnitionVersion.set("8.3.0")  // Minimum Ignition version required
+    freeModule.set(true)  // Free module (no license needed); Maker support is declared in the gateway hook
 
     // Define where each subproject's code should run
     // G = Gateway, D = Designer, GD = Both Gateway and Designer
